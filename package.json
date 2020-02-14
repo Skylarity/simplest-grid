@@ -1,6 +1,6 @@
 {
 	"name": "simplest-grid",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A (very) simple grid utility written with CSS Grid Layout.",
 	"main": "./css/index.css",
 	"scripts": {
