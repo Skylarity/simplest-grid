@@ -1,0 +1,20 @@
+.container {
+	$num-cols: 6;
+	margin: 0 auto;
+
+	display: grid;
+	grid-template-columns: repeat(#{$num-cols}, 1fr);
+	grid-gap: 4rem;
+
+	max-width: 960px;
+
+	@for $i from 1 through $num-cols {
+		.col-#{$i} {
+			grid-column-end: span $i;
+		}
+
+		.col-start-#{$i} {
+			grid-column-start: $i;
+		}
+	}
+}
