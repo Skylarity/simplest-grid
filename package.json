@@ -1,0 +1,19 @@
+{
+  "name": "simplest-grid",
+  "version": "1.0.0",
+  "description": "A (very) simple grid utility written with CSS Grid Layout.",
+  "main": "index.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skylarity/simplest-grid.git"
+  },
+  "author": "Skyler Rexroad",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/Skylarity/simplest-grid/issues"
+  },
+  "homepage": "https://github.com/Skylarity/simplest-grid#readme"
+}
