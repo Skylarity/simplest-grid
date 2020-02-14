@@ -1,19 +1,27 @@
 {
-  "name": "simplest-grid",
-  "version": "1.0.0",
-  "description": "A (very) simple grid utility written with CSS Grid Layout.",
-  "main": "index.css",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Skylarity/simplest-grid.git"
-  },
-  "author": "Skyler Rexroad",
-  "license": "Unlicense",
-  "bugs": {
-    "url": "https://github.com/Skylarity/simplest-grid/issues"
-  },
-  "homepage": "https://github.com/Skylarity/simplest-grid#readme"
+	"name": "simplest-grid",
+	"version": "1.0.0",
+	"description": "A (very) simple grid utility written with CSS Grid Layout.",
+	"main": "./css/index.css",
+	"scripts": {
+		"build": "sass scss:css",
+		"lint": "prettier --config ./.prettierrc --write ./scss/**/*",
+		"prepare": "npm run build",
+		"prepublishOnly": "npm build && npm run lint",
+		"preversion": "npm run lint"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Skylarity/simplest-grid.git"
+	},
+	"author": "Skyler Rexroad",
+	"license": "Unlicense",
+	"bugs": {
+		"url": "https://github.com/Skylarity/simplest-grid/issues"
+	},
+	"homepage": "https://github.com/Skylarity/simplest-grid#readme",
+	"devDependencies": {
+		"prettier": "1.19.1",
+		"sass": "^1.25.0"
+	}
 }
